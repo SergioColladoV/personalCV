@@ -1,0 +1,82 @@
+{
+    "name": "Sergio Collado Vázquez",
+    "position": "FullStack Developer ES6+",
+    "img": "",
+    "description": "I am a self taught person in continuous learning who likes to solve problems and improve current solutions. Since I was little I have felt a great attraction for technology, I was always seeking new knowledge and ideas. I feel a great passion for developing web apps with new technologies such as MongoDB, Express, React or NodeJS: especially SAAS. My hobbies are music, travel, gastronomy and photography.",
+    "contact": {
+        "personalEmail": "sergiocollado95@gmail.com",
+        "corporativeEmail": "contacto@sergiocollado.es",
+        "mobilePhone": "+34 615 01 00 92"
+    },
+    "socialNetworks": {
+        "web": "sergiocollado.es",
+        "gitHub": "github.com/SergioColladoV",
+        "linkedIn": "linkedin.com/in/sergiocolladov/"
+    },
+    "education": [
+        {
+            "title": "BootCamp FullStack Web Development",
+            "school": "IronHack",
+            "beginning": "2020",
+            "ending": "2020",
+            "description": ""
+        },{
+            "title": "Business Expert, Administration and Business management",
+            "school": "ThePowerMBA - Future Leaders",
+            "beginning": "2019",
+            "ending": "2020",
+            "description": ""
+        },{
+            "title": "HTML5, CSS 3, ES6, Bootstrap, SASS, React.JS, Node.JS, Express.JS, MongoDB",
+            "school": "FreeCodeCamp",
+            "beginning": "2019",
+            "ending": "Studying",
+            "description": ""
+        },{
+            "title": "Higher Technical Certificate in Web Applications Development",
+            "school": "Ilerna Online",
+            "beginning": "2018",
+            "ending": "Studying",
+            "description": ""
+        },{
+            "title": "Bachelor of Electronics Engineering",
+            "school": "Cádiz University",
+            "beginning": "2013",
+            "ending": "",
+            "description": ""
+        }
+    ],
+    "experience": [
+        {
+            "position": "Founder & CEO",
+            "company": "CubikSystems",
+            "beginning": "2018",
+            "ending": "2019",
+            "description": ""
+        },{
+            "position": "Founder & CEO",
+            "company": "Nativa3D Technologies",
+            "beginning": "2015",
+            "ending": "2018",
+            "description": ""
+        },{
+            "position": "Alumno Colaborador PAI-TIC-168",
+            "company": "Cádiz University",
+            "beginning": "2016",
+            "ending": "2017",
+            "description": ""
+        }
+    ],
+    "hardSkills": ["JavaScript ES6", "Node.js & Express.js", "MongoDB & Mongoose", "HTML5 & CSS3", "React.js", "Mocha & Jasmine"],
+    "softSkills": ["Solving Problems", "Seeking new knowledge and ideas", "Using logic in practical applications", "Thinking visually", "Developing an overriding vision or idea", "Initiating new projects"],
+    "languajes": [
+        {
+            "name": "English",
+            "level": "3"
+        },{
+            "name": "Spanish",
+            "level": "4"
+        }
+    ]
+
+}
