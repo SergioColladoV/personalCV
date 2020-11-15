@@ -1,9 +1,14 @@
 /* BASIC CSS CODE */
+html {
+	font-size: 13px;
+}
 
 :root {
 	--background-color: #eff3f5;
-	--main-color: #3272b7;
+	--main-color: #097af2;
 	--main-font-color: #212121;
+	--left-column: 30%;
+	--right-column: 70%;
 }
 
 * {
@@ -26,9 +31,190 @@ img {
 	width: 100%;
 }
 
+h3 {
+	text-transform: uppercase;
+	font-size: 1rem;
+}
+
+/* RESUME CONTENT CSS */
+
+.resume {
+	width: 210mm;
+	min-height: 297mm;
+	padding: 15mm;
+	margin: 10mm auto;
+	border-radius: 8px;
+	box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+}
+
+/* MAIN INFO */
+
+#mainInfo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+#mainInfo figure {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: var(--left-column);
+	flex-grow: 2;
+	flex-shrink: 0;
+}
+
+#mainInfo figure img {
+	width: 70%;
+	height: auto;
+	border-radius: 50%;
+	overflow: hidden;
+	height: auto;
+}
+
+#mainInfo .profileInfo {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	width: var(--right-column);
+	padding-left: 4rem;
+}
+
+#mainInfo .profileInfo #name {
+	margin-bottom: 0.5rem;
+	color: var(--main-color);
+	font-size: 2.7rem;
+}
+
+#mainInfo .profileInfo #mainPosition {
+	text-transform: uppercase;
+	font-size: 1rem;
+	opacity: 0.7;
+}
+
+/* DETAILS */
+
+#details {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.leftContent article,
+.rightContent article {
+	margin-bottom: 1.5rem;
+	font-size: 0.9rem;
+}
+
+.leftContent article h3,
+.rightContent article h3 {
+	margin-bottom: 0.5rem;
+}
+/* LEFT CONTENT */
+
+.leftContent {
+	width: var(--left-column);
+}
+
+/* PROFILE */
+.leftContent #profile #profileElm {
+	text-align: justify;
+}
+
+/* CONTACT */
+.leftContent #contact > div {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 0.5rem;
+}
+
+.leftContent #contact > div i {
+	font-size: 1rem;
+	color: var(--main-color);
+}
+
+.leftContent #contact > div p {
+	margin-left: 0.5rem;
+}
+
+/* RIGHT CONTENT */
+.rightContent {
+	width: var(--right-column);
+	padding-left: 4rem;
+	overflow: hidden;
+}
+
+.rightContent #experience {
+}
+
+.rightContent #experience > div,
+.rightContent #education > div {
+	border-left: 2px solid #e6e6e6;
+	padding-left: 1rem;
+	padding-bottom: 1rem;
+}
+
+.rightContent #experience > div:nth-last-child(1),
+.rightContent #education > div:nth-last-child(1) {
+	padding-bottom: 0 !important;
+}
+
+.rightContent #experience > div .experiencePosition,
+.rightContent #education > div .educationTitle {
+	font-size: 1rem;
+	color: var(--main-color);
+	text-transform: capitalize;
+	position: relative;
+}
+
+.rightContent #experience > div .experiencePosition::before,
+.rightContent #education > div .educationTitle::before {
+	content: "";
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: var(--main-color);
+	position: absolute;
+	left: -1.4rem;
+	top: 0.8rem;
+}
+.rightContent #experience > div .experienceCompany,
+.rightContent #education > div .educationSchool {
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	margin-bottom: 0.2rem;
+}
+
+.rightContent #experience > div .experienceCompany .experienceBeginning,
+.rightContent #experience > div .experienceCompany .experienceEnding,
+.rightContent #education > div .educationSchool .educationBeginning,
+.rightContent #education > div .educationSchool .educationEnding {
+	text-transform: capitalize;
+	font-weight: lighter;
+	opacity: 0.7;
+}
+
+.rightContent #experience > div .experienceCompany .experienceBeginning::before,
+.rightContent #education > div .educationSchool .educationBeginning::before {
+	content: " | ";
+}
+.rightContent #experience > div .experienceCompany .experienceEnding::before,
+.rightContent #education > div .educationSchool .educationEnding::before {
+	content: "-";
+}
+
+.rightContent #experience > div .experienceDescription,
+.rightContent #education > div .educationDescription {
+	font-size: 0.8rem;
+}
+
 /* PARAMETERS FOR CORRECT PRINTING */
 
-page {
+@page {
 	size: A4;
 	margin: 0;
 }
@@ -49,59 +235,4 @@ page {
 		background: initial;
 		page-break-after: always;
 	}
-}
-
-/* RESUME CONTENT CSS */
-
-.resume {
-	width: 210mm;
-	min-height: 297mm;
-	padding: 20mm;
-	margin: 10mm auto;
-	border-radius: 8px;
-	box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.1);
-	background-color: #fff;
-}
-
-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-header figure {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 20%;
-	flex-grow: 2;
-	flex-shrink: 0;
-}
-
-header figure img {
-	width: 100%;
-	height: auto;
-	border-radius: 50%;
-	overflow: hidden;
-	height: auto;
-}
-
-header .profileInfo {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: center;
-	width: 80%;
-	margin-left: 3rem;
-}
-
-header .profileInfo #name {
-	margin-bottom: 0.4rem;
-	color: var(--main-color);
-}
-
-header .profileInfo #position {
-	text-transform: uppercase;
-	font-size: 0.8rem;
-	opacity: 0.7;
 }
