@@ -1,0 +1,107 @@
+/* BASIC CSS CODE */
+
+:root {
+	--background-color: #eff3f5;
+	--main-color: #3272b7;
+	--main-font-color: #212121;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: var(--background-color);
+	color: var(--main-font-color);
+	font-family: sans-serif;
+}
+
+img {
+	width: 100%;
+}
+
+/* PARAMETERS FOR CORRECT PRINTING */
+
+page {
+	size: A4;
+	margin: 0;
+}
+
+@media print {
+	html,
+	body {
+		width: 210mm;
+		height: 297mm;
+	}
+	.resume {
+		margin: 0;
+		border: initial;
+		border-radius: initial;
+		width: initial;
+		min-height: initial;
+		box-shadow: initial;
+		background: initial;
+		page-break-after: always;
+	}
+}
+
+/* RESUME CONTENT CSS */
+
+.resume {
+	width: 210mm;
+	min-height: 297mm;
+	padding: 20mm;
+	margin: 10mm auto;
+	border-radius: 8px;
+	box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header figure {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20%;
+	flex-grow: 2;
+	flex-shrink: 0;
+}
+
+header figure img {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	overflow: hidden;
+	height: auto;
+}
+
+header .profileInfo {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	width: 80%;
+	margin-left: 3rem;
+}
+
+header .profileInfo #name {
+	margin-bottom: 0.4rem;
+	color: var(--main-color);
+}
+
+header .profileInfo #position {
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	opacity: 0.7;
+}
