@@ -80,7 +80,7 @@ h3 {
 	align-items: flex-start;
 	justify-content: center;
 	width: var(--right-column);
-	padding-left: 4rem;
+	padding-left: 3rem;
 }
 
 #mainInfo .profileInfo #name {
@@ -126,9 +126,6 @@ h3 {
 
 /* CONTACT */
 .leftContent #contact > div {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
 	margin-bottom: 0.5rem;
 }
 
@@ -137,14 +134,10 @@ h3 {
 	color: var(--main-color);
 }
 
-.leftContent #contact > div p {
-	margin-left: 0.5rem;
-}
-
 /* RIGHT CONTENT */
 .rightContent {
 	width: var(--right-column);
-	padding-left: 4rem;
+	padding-left: 3rem;
 	overflow: hidden;
 }
 
@@ -210,6 +203,16 @@ h3 {
 .rightContent #experience > div .experienceDescription,
 .rightContent #education > div .educationDescription {
 	font-size: 0.8rem;
+}
+
+.rightContent #skills {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.rightContent #skills article > div i {
+	color: var(--main-color);
 }
 
 /* PARAMETERS FOR CORRECT PRINTING */
