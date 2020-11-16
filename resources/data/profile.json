@@ -67,7 +67,7 @@
     ],
     "hardSkills": ["JavaScript ES6", "Node.js & Express.js", "MongoDB & Mongoose", "HTML5 & CSS3", "React.js", "Mocha & Jasmine"],
     "softSkills": ["Solving Problems", "Seeking new knowledge and ideas", "Using logic in practical applications", "Thinking visually", "Developing an overriding vision or idea", "Initiating new projects"],
-    "languajes": [
+    "languages": [
         {
             "name": "English",
             "level": "3"
